@@ -8,7 +8,8 @@ def initialize(name)
 end
 
 def self.new_by_filename(file_name)
-  artist, song = file_name.split(" - ")
+  artist, song_name = file_name.split(" - ")
+  new_song = self.new(song_name)
   binding.pry
   
 end
