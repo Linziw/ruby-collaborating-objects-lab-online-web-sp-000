@@ -16,6 +16,7 @@ end
 
 def self.artist_name=(name)
   
+  
 end
  
 end
