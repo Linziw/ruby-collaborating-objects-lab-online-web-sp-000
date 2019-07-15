@@ -12,11 +12,9 @@ def self.new_by_filename(file_name)
   new_song = self.new(song_name)
   new_song.artist_name= artist
   new_song
-  binding.pry
-  
-end
+  end
 
-def self.artist_name=(name)
+def artist_name=(name)
    self.artist = Artist.find_or_create_by_name(name)
    self.artist.add_song(self)
 end
