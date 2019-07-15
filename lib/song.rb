@@ -12,6 +12,7 @@ def self.new_by_filename(file_name)
   new_song = self.new(song_name)
   new_song.artist_name=(artist)
   new_song
+  binding.pry
   
 end
 
